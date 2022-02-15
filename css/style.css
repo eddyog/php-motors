@@ -1,0 +1,297 @@
+body {
+    margin: 0px auto;
+    max-width: none;
+    background-image: url("../images/site/checkerboard.jpg");
+font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  .inside{
+      background-color: white;
+      max-width: 1000px;
+      margin: 40px auto;
+      border: 10px solid #a6cbeb;
+      
+  }
+
+
+  .delorean{
+      margin-left: 40px;
+      font-size: 1.5em;
+      max-width: 100%;
+      max-height: 1200px;
+  }
+
+  #buy-button{
+      background-color: #4c96d7;
+      width: 150px;
+      color: black;
+      text-align: center;
+  }
+  
+  .title{
+      margin-left: 20px;
+  }
+
+  .products-images{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .flux, #flux-text{
+      margin-bottom: 10px;
+      grid-row: 1;
+      grid-column: 1;
+  }
+
+  .flame, #flame-text{
+      grid-row: 1;
+      grid-column: 2;
+  }
+
+  .bumper, #bumper-text {
+    grid-row: 2;
+    grid-column: 1;
+
+  }
+
+  .hub, #hub-text{
+    grid-row: 2;
+    grid-column: 2;
+
+  }
+
+  #flux-text, #flame-text, #bumper-text, #hub-text{
+      margin-top: 120px;
+      text-align: center;
+  }
+
+
+
+
+
+  /************************* Header *****************************/
+
+  header{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
+#account{
+margin: 25px;
+grid-column-start: 2;
+text-align: right;
+margin-right: 30px;
+font-size: 20px;
+}
+
+#banner-image{
+    grid-column-start: 1;
+}
+
+  /************************* NAVIGATION BAR *****************************/
+
+  nav{
+      font-size: 1.2em;
+      margin: 0 25px 0 25px;
+      color: white;
+      background-color: black;
+      text-align: center;
+  }
+
+  #navigation {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5em;
+    background-color: black;
+    color: white;
+  }
+
+  .menu{
+      color: white;
+      background-color: black;
+  }
+
+
+  nav{
+    margin: 0 auto;
+    max-width: 360px;
+    font-size: 1.3em;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#navigation li:first-child{
+    display: block;
+}
+
+#navigation li{
+    display: none;
+}
+
+#navigation a:link, 
+#navigation a:visited, 
+#navigation a:hover, 
+#navigation a:active,
+#navigation a:focus{
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: #a6cbeb;
+}
+
+#navigation.resonsive li {
+    display: block;
+}
+
+  /************************* INFORMATION DELOREAN *****************************/
+
+
+  .delorean-image{
+      height: 600px;
+      width: 900px;
+      background-image: url("../images/delorean.jpg") ;                      /* <------ */
+      background-repeat:   no-repeat;
+      background-position: center center; 
+  }
+
+  .flux, .flame, .bumper, .hub {
+      height: 75px;
+      width: 80px;
+      border-left: 70px solid #4c96d7;
+      border-right: 70px solid #4c96d7;
+      border-top: 20px solid #4c96d7;
+      border-bottom: 20px solid #4c96d7;
+  }
+
+  .products {
+    grid-template-columns: 50% 50%;
+    grid-column: 1;
+}
+
+
+footer{
+    border-top: 10px solid gray;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+
+/* *********************** STYLE FOR LARGE SCREENS**********************/
+@media only screen and (min-width: 1028PX){
+
+
+body{
+    background-image: url("../images/site/checkerboard.jpg");
+}
+
+#menu-link{
+    display: none;
+}
+
+nav {
+    max-width: 100%;
+}
+#navigation {
+    grid-template-columns: repeat(7,auto);
+}
+#navigation li{
+    display: block;
+}
+
+#navigation a:link, 
+#navigation a:visited, 
+#navigation a:hover, 
+#navigation a:active,
+#navigation a:focus{
+    text-align: center;
+}
+
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.reviews{
+    grid-column: 2;
+}
+
+.products{
+    grid-row: 1;
+
+}
+}
+/*********************** STYLE FOR SMALL SCREENS **********************/
+
+@media screen and (max-width: 480px) {
+
+body{
+    max-width: 375px;
+    background-image: url("../images/site/checkerboard.jpg");
+}
+img.delo {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delorean{
+    margin-left: 10px;
+}
+
+#buy-button{
+    width: 50px;
+}
+
+.delorean-image{
+    font-size: .5em;
+    padding-top: 10px;
+    height: 250px;
+    width: 400px;
+    background-size: 275px 250px;
+}
+
+
+.information{
+    grid-template-columns: 1fr;
+}
+
+
+.flux, .flame, .bumper, .hub {
+    height: 75px;
+    width: 80px;
+    border-left: 30px solid #4c96d7;
+    border-right: 30px solid #4c96d7;
+    border-top: 10px solid #4c96d7;
+    border-bottom: 10px solid #4c96d7;
+}
+
+.reviews{
+    font-size: 0.8em;
+}
+
+}
+
+
+/* register and Login */
+
+.register,.login{
+    padding-left: 50px;
+}

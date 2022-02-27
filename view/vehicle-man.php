@@ -26,41 +26,12 @@
     echo $navList; ?>
     </nav>
 
-    <div class="content register"> 
+    <div class="content vehicle-man"> 
 
-
-    <h1>Register</h1>
-    <h2>All fiels are required</h2>
-
-<div class="message" >
-    <?php
-    if (isset($message)) {
-    echo $message;
-    }
-    ?>
-</div>
-
-    <form action="/php-motors/accounts/index.php" method="post">
-    <label for="clientFirstname">First Name</label> <br>
-    <input name="clientFirstname" id="clientFirstname" type="text">
-    <br><br>
-
-    <label for="clientLastname">First Name</label><br>
-    <input name="clientLastname" id="clientLastname" type="text" >
-    <br><br>
-
-    <label for="clientEmail">Email</label><br>
-    <input name="clientEmail" id="clientEmail" type="text" >
-      
-    <h2>Password must be at least 8 characters and contains at least 1 number, 1 capital letter and 1 speciall character</h2>
-    <label for="clientPassword">Password</label> <br>
-    <input name="clientPassword" id="clientPassword" type="password" > <br>
-    <br> <br>
-    <input type="submit" name="submit" id="regbtn" value="register">
-    <input type="hidden" name="action" value="register">
+    <h1>Vehicle Management</h1>
+        <a href="../vehicles/index.php?action=link-add-classification">Add Classification</a>
     <br>
-
-    </form>
+        <a href="../vehicles/index.php?action=link-add-vehicle"> Add Vehicle</a>
  
     </div>
 

@@ -30,6 +30,15 @@
 
     <h1>Sign in</h1>
 
+<div class="message">
+    <?php
+    if (isset($message)) {
+    echo $message;
+    }
+    ?>
+
+</div>
+
     <label for="clientEmail">Email</label> <br>
     <input name="clientEmail" id="clientEmail" type="text" required>
 

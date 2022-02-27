@@ -292,6 +292,12 @@ img.delo {
 
 /* register and Login */
 
-.register,.login{
+.register,.login, .add-clas, .vehicle-man, .add-vehicle{
     padding-left: 50px;
+    padding-bottom: 30px;
+}w
+
+.message{
+    font-size: 25px;
+    font-weight: bold;
 }

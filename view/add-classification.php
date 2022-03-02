@@ -39,7 +39,7 @@
     <form action="/php-motors/vehicles/index.php" method="post">
         <label for="classificationName">Classification Name</label>
         <br>
-        <input name="classificationName" id="classificationName" type="text" >
+        <input name="classificationName" id="classificationName" type="text" <?php if(isset($classificationName)){echo "value='$classificationName'";} ?> required>
         <br> <br>
         <input type="submit" name="submit" id="regbtn" value="add-classification">
         <input type="hidden" name="action" value="add-classification">

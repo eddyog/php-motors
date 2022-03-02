@@ -40,24 +40,26 @@
     ?>
 </div>
 
+
     <form action="/php-motors/accounts/index.php" method="post">
     <label for="clientFirstname">First Name</label> <br>
-    <input name="clientFirstname" id="clientFirstname" type="text">
+    <input name="clientFirstname" id="clientFirstname" type="text" <?php if(isset($clientFirstname)){echo "value='$clientFirstname'";} ?> required>
     <br><br>
 
-    <label for="clientLastname">First Name</label><br>
-    <input name="clientLastname" id="clientLastname" type="text" >
+    <label for="clientLastname">Last Name</label><br>
+    <input name="clientLastname" id="clientLastname" type="text" <?php if(isset($clientLastname)){echo "value='$clientLastname'";} ?> required>
     <br><br>
 
     <label for="clientEmail">Email</label><br>
-    <input name="clientEmail" id="clientEmail" type="text" >
+    <input name="clientEmail" id="clientEmail" type="email" <?php if(isset($clientEmail)){echo "value='$clientEmail'";} ?> required>
+    <br><br>
       
-    <h2>Password must be at least 8 characters and contains at least 1 number, 1 capital letter and 1 speciall character</h2>
     <label for="clientPassword">Password</label> <br>
-    <input name="clientPassword" id="clientPassword" type="password" > <br>
+    <span>Password must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character </span><br>
+    <input name="clientPassword" id="clientPassword" type="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"> <br>
     <br> <br>
     <input type="submit" name="submit" id="regbtn" value="register">
-    <input type="hidden" name="action" value="register">
+    <input type="hidden" name="action" value="register"> <br><br>
     <br>
 
     </form>

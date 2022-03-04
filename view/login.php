@@ -39,22 +39,23 @@
 
 </div>
 
+<form method="post" action="/php-motors/accounts/">
     <label for="clientEmail">Email</label> <br>
-    <input name="clientEmail" id="clientEmail" type="text" required>
+    <input name="clientEmail" id="clientEmail" type="email" <?php if(isset($clientEmail)){echo "value='$clientEmail'";} ?> required>
 
     <br><br>
       
     <label for="clientPassword">Password</label><br>
-    <input name="clientPassword" id="clientPassword" type="password" required>
+    <span>Password must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character </span><br>
+    <input name="clientPassword" id="clientPassword" type="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"> 
     <br><br>
 
-    <button id="signin">Sign-in</button> <br>
+    <input type="submit" name="submit" id="regbtn" value="Login">
+    <input type="hidden" name="action" value="Login"> <br><br>
 
-    <br>
+    <a class="link" id="yet" href="../accounts/index.php?action=registration">No a member yet?</a> <br> <br>
 
-    <a id="yet" href="../accounts/index.php?action=registration">No a member yet?</a>
-
- 
+    </form>
     </div>
 
     <footer>

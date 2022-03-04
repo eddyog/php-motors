@@ -3,6 +3,10 @@
 
 // This is the vehicle controler 
 
+// Create or access a Session
+session_start();
+
+
 
 // Get the database connection file
 require_once '../library/connections.php';
@@ -116,6 +120,15 @@ case 'link-add-vehicle':
   }
 
   break;
+
+  //***************************** LOGOUT PROCESS ***************************** */
+  case 'Logout':
+    session_unset();
+    session_destroy();
+
+
+    header('location:/php-motors/index.php ');
+    break;  
 
  default:
   include '../view/vehicle-man.php';

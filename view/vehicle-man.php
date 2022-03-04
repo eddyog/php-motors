@@ -29,9 +29,9 @@
     <div class="content vehicle-man"> 
 
     <h1>Vehicle Management</h1>
-        <a href="../vehicles/index.php?action=link-add-classification">Add Classification</a>
+        <a class="link" href="../vehicles/index.php?action=link-add-classification">Add Classification</a>
     <br>
-        <a href="../vehicles/index.php?action=link-add-vehicle"> Add Vehicle</a>
+        <a class="link" href="../vehicles/index.php?action=link-add-vehicle"> Add Vehicle</a>
  
     </div>
 

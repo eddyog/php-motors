@@ -18,9 +18,9 @@ function checkEmail($clientEmail){
 
 function navigationBar($classifications){
 $navList = '<ul id="navigation">';
-$navList .= "<li><a href='index.php' title='View the PHP MNotors home page'>Home</a></li>";
+$navList .= "<li><a href='/php-motors/' title='View the PHP Motors home page'>Home</a></li>";
 foreach ($classifications as $classification) {
- $navList .= "<li><a href='/phpmotors/index.php?action=".urlencode($classification['classificationName'])."' title='View our $classification[classificationName] product line'>$classification[classificationName]</a></li>";
+ $navList .= "<li><a href='/php-motors/index.php?action=".urlencode($classification['classificationName'])."' title='View our $classification[classificationName] product line'>$classification[classificationName]</a></li>";
 }
 $navList .= '</ul>';
 

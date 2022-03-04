@@ -54,10 +54,10 @@
             <div class="products"> 
             <h4 class="title">Delorean Upgrades</h4>
             <div class="products-images">
-            <img class="flux left" src="../images/upgrades/flux-cap.png" alt="flux"> <a id="flux-text" href="">Flux Capacitor</a>
-            <img class="flame left" src="../images/upgrades/flame.jpg" alt="flame"> <a id="flame-text" href="">Flame Decals</a>
-            <img class="bumper left" src="../images/upgrades/bumper_sticker.jpg" alt="bumper"> <a id="bumper-text" href="">Bumper Stickers</a>
-            <img class="hub left" src="../images/upgrades/hub-cap.jpg" alt="hub"> <a id="hub-text" href="">Hub Cabs</a>
+            <img class="flux left" src="images/upgrades/flux-cap.png" alt="flux"> <a id="flux-text" href="">Flux Capacitor</a>
+            <img class="flame left" src="images/upgrades/flame.jpg" alt="flame"> <a id="flame-text" href="">Flame Decals</a>
+            <img class="bumper left" src="images/upgrades/bumper_sticker.jpg" alt="bumper"> <a id="bumper-text" href="">Bumper Stickers</a>
+            <img class="hub left" src="images/upgrades/hub-cap.jpg" alt="hub"> <a id="hub-text" href="">Hub Cabs</a>
             </div>
         </div>
 
